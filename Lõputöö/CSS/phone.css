@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+    #galerii img {
+        width: 100%;
+    }
+
+    .container-nav h1 {
+        font-size: 20px;
+    }
+
+    /* Stack main nav vertically on mobile */
+    .navbar .container-nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .navbar .container-nav ul li {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar .container-nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    /* Stack secondary nav vertically on mobile */
+    #avaleht .avalehe-nav ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
