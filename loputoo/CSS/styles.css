@@ -1,0 +1,540 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2F525C;
+}
+
+#kirjeldus, #galerii, #saunad {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+#avaleht, #avaleht-main {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #254047;
+    position: relative;
+    border-radius: 0;
+}
+
+#avaleht-main {
+    padding-bottom: 0;
+}
+
+#avaleht .avalehe-nav, #avaleht-main .avalehe-nav,
+#avaleht .info, #avaleht-main .info,
+#avaleht h2, #avaleht-main h2 {
+    padding: 0 8%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#avaleht-main .avalehe-img a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+/* main */
+html, body, a {
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Gelasio', serif;
+}
+img {
+    border-radius: 10px;
+}
+a, p {
+    font-family: 'Playfair Display', serif;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+}
+
+
+.navbar > i.fa-spa, .mina {
+    display: none; 
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #83C9BF;
+    width: 100%;
+    border-radius: 0;
+}
+
+.container-nav i {
+    font-size: 30px;
+    color: #2F525C;
+    transition: 0.3s;
+}
+
+.container-nav i:hover {
+    color: #ffffff;
+}
+
+.container-nav h1 {
+    font-family: 'Gelasio', serif;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.navbar .container-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .container-nav ul li {
+    display: inline-flex;
+}
+
+.navbar .container-nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    font-family: "Gelasio", serif;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar .container-nav ul li a:hover {
+    background: #CFE0C3;
+}
+
+/* Avaleht img */
+#avaleht-main .avalehe-img {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/avaleht.jpg) no-repeat center center/cover;
+    height: calc(100vh - 80px);
+    width: 100%; 
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#avaleht-main .avalehe-img p {
+    color: white;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* footer */
+#footer {
+    display: block;
+    background: #2c2c2c;
+    text-align: center;
+    color: #cfcfcf;
+    padding: 20px 8%;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* saunad */
+#saun {
+    display: block;
+    block-size: 500px;
+    align-items: right;
+    text-align: right;
+    background-color: #DCF0CE;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#saunad {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 700px;
+    justify-content: center;
+    background-color: #2F525C;
+}
+
+#saun img{
+    height: 100%;
+    display: flex;
+    float: right;
+    padding-right: 1px;
+}
+
+#kirjeldus .sauna-vid iframe{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#saun h3 {
+    text-align: center;
+    color: black;
+}
+
+/* kirjeldus */
+#kirjeldus {
+    background-color: #29474e;
+    padding-top: 20px;
+}
+
+/* kirjeldus - hoolitsused */
+#kirjeldus #hoolitsused {
+    display: block;
+    block-size: 500px;
+    align-items: right;
+    text-align: right;
+    background-color: #DCF0CE;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#kirjeldus .hoolitsuse-vid iframe{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#kirjeldus #hoolitsused img{
+    height: 100%;
+    display: flex;
+    float: right;
+    padding-right: 1px;
+}
+
+#kirjeldus #hoolitsused h3 {
+    text-align: center;
+    color: black;
+}
+
+/* kirjeldus - baar */
+#kirjeldus #baar {
+    display: block;
+    block-size: 500px;
+    align-items: right;
+    text-align: right;
+    background-color: #DCF0CE;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#kirjeldus .baari-vid iframe{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#kirjeldus #baar img{
+    height: 100%;
+    display: flex;
+    float: right;
+    padding-right: 1px;
+}
+
+#kirjeldus #baar h3 {
+    text-align: center;
+    color: black;
+}
+
+/* kirjeldus - istekohad */
+#kirjeldus #istekohad {
+    display: block;
+    block-size: 500px;
+    align-items: right;
+    text-align: right;
+    background-color: #DCF0CE;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#kirjeldus #istekohad img{
+    height: 100%;
+    display: flex;
+    float: right;
+    padding-right: 1px;
+}
+
+#kirjeldus .istekohad-vid iframe{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#kirjeldus #istekohad h3 {
+    text-align: center;
+    color: black;
+}
+
+/* kirjeldus - vannid */
+#kirjeldus #vannid {
+    display: block;
+    block-size: 500px;
+    align-items: right;
+    text-align: right;
+    background-color: #DCF0CE;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#kirjeldus #vannid img{
+    height: 100%;
+    display: flex;
+    float: right;
+    padding-right: 1px;
+}
+
+#kirjeldus .vanni-vid iframe{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 40%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+#kirjeldus #vannid h3 {
+    text-align: center;
+    color: black;
+}
+
+#kirjeldus #viited {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    background-color: #DCF0CE;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#kirjeldus #viited ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: "Gelasio", serif;
+}
+
+#kirjeldus #viited ul li a:hover {
+    background: #CFE0C3
+}
+
+#kirjeldus #kontakt {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    background-color: #DCF0CE;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#kirjeldus .kirj {
+    display: block;
+    text-align: center;
+    background-color: #DCF0CE;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+#kirjeldus .kirj p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#kirjeldus .kirj h2 {
+    color: black;
+    text-align: center;
+}
+
+/* avalehe extra elemendid */
+
+
+#avaleht .avalehe-nav, #avaleht-main .avalehe-nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 20px;
+}
+
+#avaleht .avalehe-nav ul, #avaleht-main .avalehe-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#avaleht .avalehe-nav ul li a, #avaleht-main .avalehe-nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #83C9BF;
+    display: block;
+    padding: 10px 20px;
+    font-family: "Gelasio", serif;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#avaleht .avalehe-nav ul li a:hover, #avaleht-main .avalehe-nav ul li a:hover {
+    background: #CFE0C3;
+}
+
+#avaleht h2, #avaleht-main h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* galerii */
+#galerii {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: #2F525C;
+    padding-top: 20px;
+}
+
+#galerii .galerii-tekst,
+#galerii .info {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+#galerii img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#galerii h2 {
+    color: white;
+    font-size: 24px;
+}
+
+#galerii p {
+    font-family: "Playfair Display", serif;
+    color: rgb(219, 218, 218);
+}
+
+/* responsive fixes */
+@media (max-width: 1200px) {
+    #kirjeldus, #galerii, #saunad, 
+    #avaleht .avalehe-nav, #avaleht-main .avalehe-nav,
+    #avaleht .info, #avaleht-main .info,
+    #avaleht h2, #avaleht-main h2,
+    .container-nav, #footer {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .container-nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container-nav h1 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar .container-nav ul {
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #avaleht-main .avalehe-img {
+        min-height: 100vh;
+        height: auto;
+        padding: 40px 4%;
+    }
+
+    .avalehe-nav ul {
+        flex-wrap: wrap;
+    }
+
+    #galerii img {
+        width: calc(50% - 10px);
+        max-width: 100%;
+    }
+
+    #kirjeldus .sauna-vid iframe,
+    #kirjeldus .hoolitsuse-vid iframe,
+    #kirjeldus .baari-vid iframe,
+    #kirjeldus .istekohad-vid iframe,
+    #kirjeldus .vanni-vid iframe {
+        width: 100%;
+    }
+
+    #kirjeldus #saun img,
+    #kirjeldus #hoolitsused img,
+    #kirjeldus #baar img,
+    #kirjeldus #istekohad img,
+    #kirjeldus #vannid img {
+        width: 100%;
+        height: auto;
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #kirjeldus, #galerii, #saunad, 
+    #avaleht .avalehe-nav, #avaleht-main .avalehe-nav,
+    #avaleht .info, #avaleht-main .info,
+    #avaleht h2, #avaleht-main h2,
+    .container-nav, #footer {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    #galerii img {
+        width: 100%;
+    }
+
+    .container-nav h1 {
+        font-size: 20px;
+    }
+}
