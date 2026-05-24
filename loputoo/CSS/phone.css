@@ -1,0 +1,82 @@
+/* Telefoni vaade */
+
+.container-nav {
+    padding: 10px;
+}
+
+.container-nav h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.navbar .container-nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.navbar .container-nav ul li {
+    width: 100%;
+}
+
+.navbar .container-nav ul li a {
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+#avaleht-main .avalehe-img {
+    padding: 20px 4%;
+}
+
+#avaleht-main .avalehe-img h2 {
+    font-size: 20px;
+}
+
+#avaleht-main .avalehe-img p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+#saun, 
+#kirjeldus #hoolitsused, 
+#kirjeldus #baar, 
+#kirjeldus #istekohad, 
+#kirjeldus #vannid {
+    block-size: auto; 
+    height: auto;
+    padding: 15px;
+}
+
+
+#kirjeldus .sauna-vid iframe,
+#kirjeldus .hoolitsuse-vid iframe,
+#kirjeldus .baari-vid iframe,
+#kirjeldus .istekohad-vid iframe,
+#kirjeldus .vanni-vid iframe {
+    height: 200px; 
+    margin-top: 15px;
+}
+
+
+#saun h3, 
+#kirjeldus #hoolitsused h3, 
+#kirjeldus #baar h3, 
+#kirjeldus #istekohad h3, 
+#kirjeldus #vannid h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#saun p, 
+#kirjeldus #hoolitsused p, 
+#kirjeldus #baar p, 
+#kirjeldus #istekohad p, 
+#kirjeldus #vannid p {
+    text-align: left;
+    font-size: 15px;
+}
