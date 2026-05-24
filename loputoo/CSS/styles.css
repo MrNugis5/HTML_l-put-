@@ -19,6 +19,15 @@ body {
     padding: 0 8%;
 }
 
+
+/* Avaleht */
+
+#avaleht h2, #avaleht-main h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
 #avaleht, #avaleht-main {
     padding: 0;
     width: 100%;
@@ -47,6 +56,27 @@ body {
 #avaleht-main .avalehe-img a {
     text-decoration: none;
     color: #cfcfcf;
+}
+
+/* Avaleht img */
+#avaleht-main .avalehe-img {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/avaleht.jpg) no-repeat center center/cover;
+    height: calc(100vh - 80px);
+    width: 100%; 
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#avaleht-main .avalehe-img p {
+    color: white;
+    max-width: 800px;
+    text-align: center;
 }
 
 /* main */
@@ -127,27 +157,6 @@ a, p {
 
 .navbar .container-nav ul li a:hover {
     background: #CFE0C3;
-}
-
-/* Avaleht img */
-#avaleht-main .avalehe-img {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/avaleht.jpg) no-repeat center center/cover;
-    height: calc(100vh - 80px);
-    width: 100%; 
-    border-radius: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 8%;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-#avaleht-main .avalehe-img p {
-    color: white;
-    max-width: 800px;
-    text-align: center;
 }
 
 /* footer */
@@ -336,92 +345,8 @@ a, p {
     color: black;
 }
 
-#kirjeldus #viited {
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-    background-color: #DCF0CE;
-    padding: 10px;
-    border-radius: 12px;
-}
-
-#kirjeldus #viited ul li a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    font-family: "Gelasio", serif;
-}
-
-#kirjeldus #viited ul li a:hover {
-    background: #CFE0C3
-}
-
-#kirjeldus #kontakt {
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-    background-color: #DCF0CE;
-    padding: 10px;
-    border-radius: 12px;
-}
-
-#kirjeldus .kirj {
-    display: block;
-    text-align: center;
-    background-color: #DCF0CE;
-    padding: 10px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-}
-#kirjeldus .kirj p {
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-#kirjeldus .kirj h2 {
-    color: black;
-    text-align: center;
-}
-
 /* avalehe extra elemendid */
 
-
-#avaleht .avalehe-nav, #avaleht-main .avalehe-nav {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    background-color: transparent;
-    padding-top: 20px;
-}
-
-#avaleht .avalehe-nav ul, #avaleht-main .avalehe-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-#avaleht .avalehe-nav ul li a, #avaleht-main .avalehe-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color: #83C9BF;
-    display: block;
-    padding: 10px 20px;
-    font-family: "Gelasio", serif;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-#avaleht .avalehe-nav ul li a:hover, #avaleht-main .avalehe-nav ul li a:hover {
-    background: #CFE0C3;
-}
-
-#avaleht h2, #avaleht-main h2 {
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
 
 /* galerii */
 #galerii {
